@@ -21,9 +21,9 @@ async function CalNetAuthentication(page) {
     page.goto(auth_url);
     await page.waitForNavigation();
     await page.waitForTimeout(1000);
-    await page.type("input[id='username'", 'shiqiz');
+    await page.type("input[id='username'", 'ENTER YOUR USERNAME');
     await page.waitForTimeout(500);
-    await page.type("input[id='password'", 'Key#20001020');
+    await page.type("input[id='password'", 'ENTER YOUR PASSWORD');
     await page.waitForTimeout(1000);
     await page.evaluate(() => document.getElementsByClassName('button')[0].click())
 }
