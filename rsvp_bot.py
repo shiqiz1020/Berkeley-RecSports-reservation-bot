@@ -15,7 +15,7 @@ class RSVP:
         self.driver.get("https://shop.rs.berkeley.edu/Account/Login?ReturnUrl=%2Fbooking%2F8e4a4640-3b33-4848-808c-4d8b03875e77#")
         button = self.driver.find_element_by_xpath('//*[@id="divLoginOptions"]/div[2]/div[2]/div/button')
         button.click()
-        self.CalNetLogIn('shiqiz', 'Key#20001020')
+        self.CalNetLogIn('USERNAME', 'PASSWORD')
 
     def CalNetLogIn(self, CalNet_ID, Passphrase):
         self.driver.get('https://auth.berkeley.edu/cas/login?service=https%3A%2F%2Fshib.berkeley.edu%2Fidp%2FAuthn%2FExternal%3Fconversation%3De1s1%26entityId%3Dhttps%3A%2F%2Fshop.rs.berkeley.edu%2Fshibboleth')
